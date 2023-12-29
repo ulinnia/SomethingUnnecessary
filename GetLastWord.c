@@ -7,7 +7,7 @@ int main() {
     fgets(sentence, sizeof(sentence), stdin);
 
     int len = strlen(sentence);
-    if (len > 1 && sentence[len - 1] == '\n') {
+    if (len >= 1 && sentence[len - 1] == '\n') {
         sentence[len - 1] = '\0';
     }
 
